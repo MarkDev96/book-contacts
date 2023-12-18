@@ -27,7 +27,7 @@ apiRouter.use("/v1", BookContactRouter);
 
 
 app.use(ErrorMiddleware);
-const server = app.listen(ENV.PORT, () => logger.info("Api it's running " + ENV.PORT));
+const server = app.listen(ENV.PORT, () => logger.info("Server started on port " + ENV.PORT));
 
 export default server;
 
